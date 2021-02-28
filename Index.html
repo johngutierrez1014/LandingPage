@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="logo">Creative</div>
+        <img src="https://placeimg.com/1000/1000/people" class="bg">
+        <div class="content">
+            <h2>Let's Make<br>Something Creative</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum tortor felis, eu mattis magna
+                gravida nec. Pellentesque odio turpis, porta id lacus non, ornare finibus ante. Aliquam quis molestie
+                erat. Vivamus non quam gravida, commodo metus sit amet, iaculis eros. Quisque varius tempor tellus, nec
+                mollis elit. Nam hendrerit enim lorem, id pulvinar ex rutrum ac. Maecenas quis orci eu sem interdum
+                hendrerit vitae a nisi. Ut congue ligula varius, congue mauris id, commodo libero. Nulla facilisi. Sed
+                sollicitudin nisl mi, tristique lacinia ipsum vehicula non. Nullam luctus ac odio in semper.</p>
+            <a href="#">Get Started</a>
+        </div>
+        <p class="copyrightText">©2021. John Gutierrez</p>
+    </section>
+    <!-- menu -->
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <div class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="socialBar">
+            <ul>
+                <li><a href="#"><img src="/images/images/facebook.png"></a></li>
+                <li><a href="#"><img src="/images/images/twitter.png"></a></li>
+                <li><a href="#"><img src="/images/images/instagram.png"></a></li>
+            </ul>
+            <a href="#" class="emailBx"><img src="/images/images/email.png"></a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.menuToggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }    
+    </script>
+</body>
+
+</html>
